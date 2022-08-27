@@ -1,8 +1,75 @@
+:root {
+ --purple:  rgb(196, 12, 196);
+ --darkgrey:  rgb(65, 54, 54);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: grey;
+    background-color: var(--darkgrey);
 }
 
 header {
-
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
 }
 
+h1 {
+    color: var(--purple);
+    margin-bottom: 10px;
+    font-size: 200%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+header p {
+    color: white;
+    font-size: 80%;
+    padding: 0 40px;
+}
+
+section {
+    border: 1px dashed white;
+    margin: 10px;
+    text-align: left;
+    padding: 10px;
+}
+
+Section h2 {
+    border: 1px solid white;
+    border-radius: 7px;
+    color: var(--purple);
+    background-color: var(--darkgrey);
+    width: 200px;
+    font-size: 150%;
+    position: relative;
+    top: -15px;
+    left: 50px;
+    padding: 3px 5px;
+}
+
+section p {
+    color: var(--purple);
+    font-size: 75%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+section pre {
+    border: 1px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgb(64 43 64), rgb(196 12 196));
+    color: white;
+    transform: scale();
+}
+
+section code {
+    text-align: left;
+}
